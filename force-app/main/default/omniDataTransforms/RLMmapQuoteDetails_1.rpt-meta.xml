@@ -1,0 +1,777 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+  &quot;SalesRep&quot; : {
+    &quot;Name&quot; : &quot;Marc Sardello&quot;,
+    &quot;City&quot; : &quot;Monroe&quot;,
+    &quot;Street&quot; : &quot;2806 Mason St.&quot;,
+    &quot;PostalCode&quot; : &quot;28110&quot;,
+    &quot;State&quot; : &quot;NC&quot;,
+    &quot;CompanyName&quot; : &quot;Ludwig Drums&quot;
+  },
+  &quot;Account&quot; : {
+    &quot;Name&quot; : &quot;*Guitar Center - Central Dallas 440&quot;,
+    &quot;BillingState&quot; : &quot;TX&quot;,
+    &quot;BillingPostalCode&quot; : &quot;75244&quot;,
+    &quot;BillingCity&quot; : &quot;Dallas&quot;,
+    &quot;BillingStreet&quot; : &quot;4519 Lyndon B Johnson Freeway&quot;
+  },
+  &quot;Quote&quot; : {
+    &quot;CreatedDate&quot; : &quot;01/29/2024&quot;,
+    &quot;GrandTotal&quot; : 3602.15,
+    &quot;QuoteLineItem&quot; : [ {
+      &quot;ListPrice&quot; : 2749,
+      &quot;Product&quot; : {
+        &quot;Name&quot; : &quot;Ludwig Classic Maple Fab Shell Pack - VBO&quot;,
+        &quot;OS_Sort_Order__c&quot; : 10,
+        &quot;Family&quot; : &quot;Drum Sets&quot;
+      },
+      &quot;Quantity&quot; : 1,
+      &quot;TotalPrice&quot; : 2749,
+      &quot;Product2Id&quot; : &quot;01t1Q000009hoDMQAY&quot;,
+      &quot;NetUnitPrice&quot; : 2749
+    }, {
+      &quot;ListPrice&quot; : 1449,
+      &quot;Product&quot; : {
+        &quot;Name&quot; : &quot;Bass Drum&quot;,
+        &quot;OS_Sort_Order__c&quot; : 20,
+        &quot;Family&quot; : &quot;Shell Pack&quot;
+      },
+      &quot;Quantity&quot; : 1,
+      &quot;TotalPrice&quot; : 0,
+      &quot;Attribute&quot; : [ {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HG4QAM&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OaoQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Batter&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HFBQA2&quot;,
+        &quot;AttributeValue&quot; : &quot;Clear PS3&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004H68QAE&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OapQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Size&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004H6bQAE&quot;,
+        &quot;AttributeValue&quot; : &quot;16x20&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HTQQA2&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OaqQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Resonant&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HFGQA2&quot;,
+        &quot;AttributeValue&quot; : &quot;White with Logo&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HFBQA2&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OarQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Lugs&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HF1QAM&quot;,
+        &quot;AttributeValue&quot; : &quot;Mini Classic&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HFVQA2&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OasQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Mounts&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HF6QAM&quot;,
+        &quot;AttributeValue&quot; : &quot;Atlas Single Tom Holder&quot;
+      } ],
+      &quot;Product2Id&quot; : &quot;01t1Q000009hngZQAQ&quot;,
+      &quot;NetUnitPrice&quot; : 0
+    }, {
+      &quot;ListPrice&quot; : 859,
+      &quot;Product&quot; : {
+        &quot;Name&quot; : &quot;Mounted Tom&quot;,
+        &quot;OS_Sort_Order__c&quot; : 30,
+        &quot;Family&quot; : &quot;Shell Pack&quot;
+      },
+      &quot;Quantity&quot; : 1,
+      &quot;TotalPrice&quot; : 0,
+      &quot;Attribute&quot; : [ {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HFBQA2&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OatQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Lugs&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HF1QAM&quot;,
+        &quot;AttributeValue&quot; : &quot;Mini Classic&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HG5QAM&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OauQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Batter&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HFBQA2&quot;,
+        &quot;AttributeValue&quot; : &quot;Clear Emperor&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HFRQA2&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OavQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Mounts&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HF6QAM&quot;,
+        &quot;AttributeValue&quot; : &quot;Atlas Tom Bracket&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HG9QAM&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OawQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Resonant&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HFGQA2&quot;,
+        &quot;AttributeValue&quot; : &quot;Clear Ambassador&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004H64QAE&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OaxQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Size&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004H6bQAE&quot;,
+        &quot;AttributeValue&quot; : &quot;10x12&quot;
+      } ],
+      &quot;Product2Id&quot; : &quot;01t1Q000009hngaQAA&quot;,
+      &quot;NetUnitPrice&quot; : 0
+    }, {
+      &quot;ListPrice&quot; : 949,
+      &quot;Product&quot; : {
+        &quot;Name&quot; : &quot;Floor Tom&quot;,
+        &quot;OS_Sort_Order__c&quot; : 40,
+        &quot;Family&quot; : &quot;Shell Pack&quot;
+      },
+      &quot;Quantity&quot; : 1,
+      &quot;TotalPrice&quot; : 0,
+      &quot;Attribute&quot; : [ {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HG5QAM&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OaeQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Batter&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HFBQA2&quot;,
+        &quot;AttributeValue&quot; : &quot;Clear Emperor&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004H6RQAU&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OafQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Size&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004H6bQAE&quot;,
+        &quot;AttributeValue&quot; : &quot;14x14&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HG9QAM&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OagQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Resonant&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HFGQA2&quot;,
+        &quot;AttributeValue&quot; : &quot;Clear Ambassador&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HFgQAM&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OahQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Mounts&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HF6QAM&quot;,
+        &quot;AttributeValue&quot; : &quot;Atlas Brkts/Legs&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HFBQA2&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OaiQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Lugs&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HF1QAM&quot;,
+        &quot;AttributeValue&quot; : &quot;Mini Classic&quot;
+      } ],
+      &quot;Product2Id&quot; : &quot;01t1Q000009hnhmQAA&quot;,
+      &quot;NetUnitPrice&quot; : 0
+    }, {
+      &quot;ListPrice&quot; : 549,
+      &quot;Product&quot; : {
+        &quot;Name&quot; : &quot;Snare Drum&quot;,
+        &quot;OS_Sort_Order__c&quot; : 50,
+        &quot;Family&quot; : &quot;Snare&quot;
+      },
+      &quot;Quantity&quot; : 1,
+      &quot;TotalPrice&quot; : 599,
+      &quot;Attribute&quot; : [ {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HF7QAM&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OajQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Lugs&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HF1QAM&quot;,
+        &quot;AttributeValue&quot; : &quot;Tube&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004H67QAE&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OakQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Size&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004H6bQAE&quot;,
+        &quot;AttributeValue&quot; : &quot;6.5x14&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HTGQA2&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OalQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Resonant&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HFGQA2&quot;,
+        &quot;AttributeValue&quot; : &quot;Hazy 200&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HFDQA2&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OamQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Mounts&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HF6QAM&quot;,
+        &quot;AttributeValue&quot; : &quot;Supraphonic Strainer&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HGAQA2&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OanQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Batter&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HFBQA2&quot;,
+        &quot;AttributeValue&quot; : &quot;Coated Ambassador&quot;
+      } ],
+      &quot;Product2Id&quot; : &quot;01t1Q000009hhDLQAY&quot;,
+      &quot;NetUnitPrice&quot; : 599
+    }, {
+      &quot;ListPrice&quot; : 299,
+      &quot;Product&quot; : {
+        &quot;Name&quot; : &quot;Ludwig Atlas Hardware Pack&quot;,
+        &quot;OS_Sort_Order__c&quot; : 70,
+        &quot;Family&quot; : &quot;HW Pack&quot;
+      },
+      &quot;Quantity&quot; : 1,
+      &quot;TotalPrice&quot; : 254.15,
+      &quot;Product2Id&quot; : &quot;01t1Q000009hoROQAY&quot;,
+      &quot;NetUnitPrice&quot; : 254.15
+    } ],
+    &quot;ExpirationDate&quot; : &quot;01/31/2024&quot;,
+    &quot;QuoteNumber&quot; : &quot;00000072&quot;
+  }
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>RLMmapQuoteDetails</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>RLMmapQuoteDetailsCustom0jI1Q000000cY3rUAEItem6</globalKey>
+        <inputFieldName>Quote:QuoteNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RLMmapQuoteDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>QuoteNumber</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>RLMmapQuoteDetailsCustom0jI1Q000000cY3rUAEItem7</globalKey>
+        <inputFieldName>SalesRep:City</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RLMmapQuoteDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SRCity</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>RLMmapQuoteDetailsCustom0jI1Q000000cY3rUAEItem8</globalKey>
+        <inputFieldName>SalesRep:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RLMmapQuoteDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SRName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>RLMmapQuoteDetailsCustom0jI1Q000000cY3rUAEItem3</globalKey>
+        <inputFieldName>SalesRep:CompanyName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RLMmapQuoteDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SRCo</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>RLMmapQuoteDetailsCustom0jI1Q000000cY3rUAEItem4</globalKey>
+        <inputFieldName>Account:BillingStreet</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RLMmapQuoteDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingStreet</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>RLMmapQuoteDetailsCustom0jI1Q000000cY3rUAEItem5</globalKey>
+        <inputFieldName>Quote:QuoteLineItem:ListPrice</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RLMmapQuoteDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Currency</outputFieldFormat>
+        <outputFieldName>Lines:ListPrice</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>RLMmapQuoteDetailsCustom0jI1Q000000cY3rUAEItem11</globalKey>
+        <inputFieldName>SalesRep:Street</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RLMmapQuoteDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SRStreet</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>RLMmapQuoteDetailsCustom0jI1Q000000cY3rUAEItem22</globalKey>
+        <inputFieldName>Quote:CreatedDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RLMmapQuoteDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>CreatedDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>RLMmapQuoteDetailsCustom0jI1Q000000cY3rUAEItem12</globalKey>
+        <inputFieldName>Quote:QuoteLineItem:NetUnitPrice</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RLMmapQuoteDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Currency</outputFieldFormat>
+        <outputFieldName>Lines:NetUnitPrice</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>RLMmapQuoteDetailsCustom0jI1Q000000cY3rUAEItem2</globalKey>
+        <inputFieldName>Quote:QuoteLineItem:Attribute:AttributeName</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RLMmapQuoteDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Lines:Attributes:AttributeName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>RLMmapQuoteDetailsCustom0jI1Q000000cY3rUAEItem13</globalKey>
+        <inputFieldName>Quote:QuoteLineItem:Product:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RLMmapQuoteDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Lines:ProductName</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>RLMmapQuoteDetailsCustom0jI1Q000000cY3rUAEItem14</globalKey>
+        <inputFieldName>Account:BillingCity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RLMmapQuoteDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingCity</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>RLMmapQuoteDetailsCustom0jI1Q000000cY3rUAEItem1</globalKey>
+        <inputFieldName>Quote:QuoteLineItem:Product:Family</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RLMmapQuoteDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Lines:ProductFamily</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>RLMmapQuoteDetailsCustom0jI1Q000000cY3rUAEItem0</globalKey>
+        <inputFieldName>Quote:QuoteLineItem:Attribute:AttributeValue</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RLMmapQuoteDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Lines:Attributes:AttributeValue</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>RLMmapQuoteDetailsCustom0jI1Q000000cY3rUAEItem19</globalKey>
+        <inputFieldName>Quote:QuoteLineItem:TotalPrice</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RLMmapQuoteDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Currency</outputFieldFormat>
+        <outputFieldName>Lines:TotalPrice</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>RLMmapQuoteDetailsCustom0jI1Q000000cY3rUAEItem9</globalKey>
+        <inputFieldName>SalesRep:PostalCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RLMmapQuoteDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SRPostal</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>RLMmapQuoteDetailsCustom0jI1Q000000cY3rUAEItem20</globalKey>
+        <inputFieldName>Quote:GrandTotal</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RLMmapQuoteDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>Currency</outputFieldFormat>
+        <outputFieldName>GrandTotal</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>RLMmapQuoteDetailsCustom0jI1Q000000cY3rUAEItem10</globalKey>
+        <inputFieldName>SalesRep:State</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RLMmapQuoteDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>SRState</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>RLMmapQuoteDetailsCustom0jI1Q000000cY3rUAEItem21</globalKey>
+        <inputFieldName>Quote:ExpirationDate</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RLMmapQuoteDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>ExpDate</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>RLMmapQuoteDetailsCustom0jI1Q000000cY3rUAEItem15</globalKey>
+        <inputFieldName>Account:BillingPostalCode</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RLMmapQuoteDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingPostalCode</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>RLMmapQuoteDetailsCustom0jI1Q000000cY3rUAEItem16</globalKey>
+        <inputFieldName>Quote:QuoteLineItem:Quantity</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RLMmapQuoteDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Lines:Quantity</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>RLMmapQuoteDetailsCustom0jI1Q000000cY3rUAEItem17</globalKey>
+        <inputFieldName>Account:BillingState</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RLMmapQuoteDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>BillingState</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>RLMmapQuoteDetailsCustom0jI1Q000000cY3rUAEItem18</globalKey>
+        <inputFieldName>Account:Name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RLMmapQuoteDetails</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Account</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+  &quot;SalesRep&quot; : {
+    &quot;Name&quot; : &quot;Marc Sardello&quot;,
+    &quot;City&quot; : &quot;Monroe&quot;,
+    &quot;Street&quot; : &quot;2806 Mason St.&quot;,
+    &quot;PostalCode&quot; : &quot;28110&quot;,
+    &quot;State&quot; : &quot;NC&quot;,
+    &quot;CompanyName&quot; : &quot;Ludwig Drums&quot;
+  },
+  &quot;Account&quot; : {
+    &quot;Name&quot; : &quot;*Guitar Center - Central Dallas 440&quot;,
+    &quot;BillingState&quot; : &quot;TX&quot;,
+    &quot;BillingPostalCode&quot; : &quot;75244&quot;,
+    &quot;BillingCity&quot; : &quot;Dallas&quot;,
+    &quot;BillingStreet&quot; : &quot;4519 Lyndon B Johnson Freeway&quot;
+  },
+  &quot;Quote&quot; : {
+    &quot;CreatedDate&quot; : &quot;01/29/2024&quot;,
+    &quot;GrandTotal&quot; : 3602.15,
+    &quot;QuoteLineItem&quot; : [ {
+      &quot;ListPrice&quot; : 2749,
+      &quot;Product&quot; : {
+        &quot;Name&quot; : &quot;Ludwig Classic Maple Fab Shell Pack - VBO&quot;,
+        &quot;OS_Sort_Order__c&quot; : 10,
+        &quot;Family&quot; : &quot;Drum Sets&quot;
+      },
+      &quot;Quantity&quot; : 1,
+      &quot;TotalPrice&quot; : 2749,
+      &quot;Product2Id&quot; : &quot;01t1Q000009hoDMQAY&quot;,
+      &quot;NetUnitPrice&quot; : 2749
+    }, {
+      &quot;ListPrice&quot; : 1449,
+      &quot;Product&quot; : {
+        &quot;Name&quot; : &quot;Bass Drum&quot;,
+        &quot;OS_Sort_Order__c&quot; : 20,
+        &quot;Family&quot; : &quot;Shell Pack&quot;
+      },
+      &quot;Quantity&quot; : 1,
+      &quot;TotalPrice&quot; : 0,
+      &quot;Attribute&quot; : [ {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HG4QAM&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OaoQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Batter&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HFBQA2&quot;,
+        &quot;AttributeValue&quot; : &quot;Clear PS3&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004H68QAE&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OapQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Size&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004H6bQAE&quot;,
+        &quot;AttributeValue&quot; : &quot;16x20&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HTQQA2&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OaqQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Resonant&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HFGQA2&quot;,
+        &quot;AttributeValue&quot; : &quot;White with Logo&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HFBQA2&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OarQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Lugs&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HF1QAM&quot;,
+        &quot;AttributeValue&quot; : &quot;Mini Classic&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HFVQA2&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OasQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Mounts&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HF6QAM&quot;,
+        &quot;AttributeValue&quot; : &quot;Atlas Single Tom Holder&quot;
+      } ],
+      &quot;Product2Id&quot; : &quot;01t1Q000009hngZQAQ&quot;,
+      &quot;NetUnitPrice&quot; : 0
+    }, {
+      &quot;ListPrice&quot; : 859,
+      &quot;Product&quot; : {
+        &quot;Name&quot; : &quot;Mounted Tom&quot;,
+        &quot;OS_Sort_Order__c&quot; : 30,
+        &quot;Family&quot; : &quot;Shell Pack&quot;
+      },
+      &quot;Quantity&quot; : 1,
+      &quot;TotalPrice&quot; : 0,
+      &quot;Attribute&quot; : [ {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HFBQA2&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OatQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Lugs&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HF1QAM&quot;,
+        &quot;AttributeValue&quot; : &quot;Mini Classic&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HG5QAM&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OauQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Batter&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HFBQA2&quot;,
+        &quot;AttributeValue&quot; : &quot;Clear Emperor&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HFRQA2&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OavQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Mounts&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HF6QAM&quot;,
+        &quot;AttributeValue&quot; : &quot;Atlas Tom Bracket&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HG9QAM&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OawQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Resonant&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HFGQA2&quot;,
+        &quot;AttributeValue&quot; : &quot;Clear Ambassador&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004H64QAE&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OaxQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Size&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004H6bQAE&quot;,
+        &quot;AttributeValue&quot; : &quot;10x12&quot;
+      } ],
+      &quot;Product2Id&quot; : &quot;01t1Q000009hngaQAA&quot;,
+      &quot;NetUnitPrice&quot; : 0
+    }, {
+      &quot;ListPrice&quot; : 949,
+      &quot;Product&quot; : {
+        &quot;Name&quot; : &quot;Floor Tom&quot;,
+        &quot;OS_Sort_Order__c&quot; : 40,
+        &quot;Family&quot; : &quot;Shell Pack&quot;
+      },
+      &quot;Quantity&quot; : 1,
+      &quot;TotalPrice&quot; : 0,
+      &quot;Attribute&quot; : [ {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HG5QAM&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OaeQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Batter&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HFBQA2&quot;,
+        &quot;AttributeValue&quot; : &quot;Clear Emperor&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004H6RQAU&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OafQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Size&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004H6bQAE&quot;,
+        &quot;AttributeValue&quot; : &quot;14x14&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HG9QAM&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OagQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Resonant&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HFGQA2&quot;,
+        &quot;AttributeValue&quot; : &quot;Clear Ambassador&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HFgQAM&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OahQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Mounts&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HF6QAM&quot;,
+        &quot;AttributeValue&quot; : &quot;Atlas Brkts/Legs&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HFBQA2&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OaiQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Lugs&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HF1QAM&quot;,
+        &quot;AttributeValue&quot; : &quot;Mini Classic&quot;
+      } ],
+      &quot;Product2Id&quot; : &quot;01t1Q000009hnhmQAA&quot;,
+      &quot;NetUnitPrice&quot; : 0
+    }, {
+      &quot;ListPrice&quot; : 549,
+      &quot;Product&quot; : {
+        &quot;Name&quot; : &quot;Snare Drum&quot;,
+        &quot;OS_Sort_Order__c&quot; : 50,
+        &quot;Family&quot; : &quot;Snare&quot;
+      },
+      &quot;Quantity&quot; : 1,
+      &quot;TotalPrice&quot; : 599,
+      &quot;Attribute&quot; : [ {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HF7QAM&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OajQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Lugs&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HF1QAM&quot;,
+        &quot;AttributeValue&quot; : &quot;Tube&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004H67QAE&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OakQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Size&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004H6bQAE&quot;,
+        &quot;AttributeValue&quot; : &quot;6.5x14&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HTGQA2&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OalQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Resonant&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HFGQA2&quot;,
+        &quot;AttributeValue&quot; : &quot;Hazy 200&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HFDQA2&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OamQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Mounts&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HF6QAM&quot;,
+        &quot;AttributeValue&quot; : &quot;Supraphonic Strainer&quot;
+      }, {
+        &quot;AttributePicklistValueId&quot; : &quot;0v61Q0000004HGAQA2&quot;,
+        &quot;Id&quot; : &quot;0zu1Q0000008OanQAE&quot;,
+        &quot;AttributeName&quot; : &quot;Batter&quot;,
+        &quot;AttributeDefinitionId&quot; : &quot;0tj1Q0000004HFBQA2&quot;,
+        &quot;AttributeValue&quot; : &quot;Coated Ambassador&quot;
+      } ],
+      &quot;Product2Id&quot; : &quot;01t1Q000009hhDLQAY&quot;,
+      &quot;NetUnitPrice&quot; : 599
+    }, {
+      &quot;ListPrice&quot; : 299,
+      &quot;Product&quot; : {
+        &quot;Name&quot; : &quot;Ludwig Atlas Hardware Pack&quot;,
+        &quot;OS_Sort_Order__c&quot; : 70,
+        &quot;Family&quot; : &quot;HW Pack&quot;
+      },
+      &quot;Quantity&quot; : 1,
+      &quot;TotalPrice&quot; : 254.15,
+      &quot;Product2Id&quot; : &quot;01t1Q000009hoROQAY&quot;,
+      &quot;NetUnitPrice&quot; : 254.15
+    } ],
+    &quot;ExpirationDate&quot; : &quot;01/31/2024&quot;,
+    &quot;QuoteNumber&quot; : &quot;00000072&quot;
+  }
+}</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <targetOutputFileName>Quote(Version 1)</targetOutputFileName>
+    <type>Transform</type>
+    <uniqueName>RLMmapQuoteDetails_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>

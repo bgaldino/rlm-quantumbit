@@ -1,0 +1,2 @@
+Id,Name,sbaa__AggregateField__c,sbaa__AggregateFunction__c,sbaa__CombineWith__c,sbaa__CombineWith__r.Id,sbaa__FilterField__c,sbaa__FilterValue__c,sbaa__ListVariable__c,sbaa__ListVariable__r.Id,sbaa__NetVariable__c,sbaa__NetVariable__r.Id,sbaa__Operator__c,sbaa__TargetObject__c,sbaa__Type__c
+a0K3y00000BE0ATEA1,Max Discount,Discount,Max,,,,,,,,,,QuoteLineItem,Summary

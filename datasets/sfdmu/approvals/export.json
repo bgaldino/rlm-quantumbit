@@ -1,0 +1,53 @@
+{
+    "objects": [
+        {
+            "query": "SELECT Name,Username FROM user WHERE IsActive = 'true'",
+            "operation": "Readonly",
+            "externalId": "Name",
+            "excluded": true
+        },
+        {
+            "query": "SELECT Name, sbaa__TargetObject__c FROM sbaa__ApprovalChain__c",
+            "operation": "Upsert",
+            "externalId": "Name",
+            "excluded": false
+        },
+        {
+            "query": "SELECT Name, sbaa__ApprovalRule__c, sbaa__EnableSmartApproval__c, sbaa__FilterField__c, sbaa__FilterType__c, sbaa__FilterValue__c, sbaa__FilterVariable__c, sbaa__Index__c, sbaa__Operator__c, sbaa__TestedField__c, sbaa__TestedVariable__c FROM sbaa__ApprovalCondition__c",
+            "operation": "Upsert",
+            "externalId": "Name",
+            "excluded": false
+        },
+        {
+            "query": "SELECT Name, sbaa__Active__c, sbaa__AdvancedCondition__c, sbaa__ApprovalChain__c, sbaa__ApprovalRecipients__c, sbaa__ApprovalStep__c, sbaa__ApprovalTemplate__c, sbaa__Approver__c, sbaa__ApproverField__c, sbaa__ConditionsMet__c, sbaa__EffectiveDateField__c, sbaa__EffectiveEndDate__c, sbaa__EffectiveStartDate__c, sbaa__ExcludedStatuses__c, sbaa__OverrideField__c, sbaa__Parallel__c, sbaa__RecallTemplate__c, sbaa__RejectionRecipients__c, sbaa__RejectionTemplate__c, sbaa__RequestTemplate__c, sbaa__RequireExplicitApproval__c, sbaa__SmartApprovalIgnoresConditionsMet__c, sbaa__TargetObject__c FROM sbaa__ApprovalRule__c",
+            "operation": "Upsert",
+            "externalId": "Name",
+            "excluded": false
+        },
+        {
+            "query": "SELECT Name, sbaa__AggregateField__c, sbaa__AggregateFunction__c, sbaa__CombineWith__c, sbaa__FilterField__c, sbaa__FilterValue__c, sbaa__ListVariable__c, sbaa__NetVariable__c, sbaa__Operator__c, sbaa__TargetObject__c, sbaa__Type__c FROM sbaa__ApprovalVariable__c",
+            "operation": "Upsert",
+            "externalId": "Name",
+            "excluded": false
+        },
+        {
+            "query": "SELECT Name, sbaa__DelegatedApprover__c, sbaa__DelegatedUserId__c, sbaa__DelegationEnd__c, sbaa__DelegationStart__c, sbaa__GroupId__c, sbaa__NextApprover__c, sbaa__Unanimous__c, sbaa__User__c FROM sbaa__Approver__c",
+            "operation": "Upsert",
+            "externalId": "Name",
+            "excluded": false
+        },
+        {
+            "query": "SELECT Name FROM EmailTemplate",
+            "operation": "Upsert",
+            "externalId": "Name",
+            "excluded": false
+        },
+        {
+            "query": "SELECT Name, sbaa__TemplateId__c FROM sbaa__EmailTemplate__c",
+            "operation": "Upsert",
+            "externalId": "Name",
+            "excluded": false
+        }
+    ],
+    "orgs": []
+}
