@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>BaseURL__c</fullName>
+    <fullName>RLM_BaseURL__c</fullName>
     <externalId>false</externalId>
-    <formula>$CustomMetadata.RLM_IDO_Setting__mdt.BaseURL.Value__c</formula>
+    <formula>LEFT($Api.Enterprise_Server_URL_600, FIND(&apos;/services&apos;,$Api.Enterprise_Server_URL_600))</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
     <label>BaseURL</label>
     <required>false</required>

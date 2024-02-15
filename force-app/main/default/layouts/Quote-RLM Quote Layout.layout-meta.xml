@@ -47,10 +47,6 @@
                 <field>SubmittedUser__c</field>
             </layoutItems>
             <layoutItems>
-                <behavior>Edit</behavior>
-                <field>CurrencyIsoCode</field>
-            </layoutItems>
-            <layoutItems>
                 <behavior>Readonly</behavior>
                 <field>BaseURL__c</field>
             </layoutItems>

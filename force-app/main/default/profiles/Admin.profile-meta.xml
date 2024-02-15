@@ -25,11 +25,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Quote.RLM_ApprovalStatus__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Quote.RLM_Payment_Terms__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -41,16 +36,6 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Quote.SubmittedUser__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.RLM_SubmittedDate__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Quote.RLM_SubmittedUser__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -114,6 +99,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>Product2-RLM Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Quote-RLM Quote Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
         <layout>QuoteLineItem-RLM Quote Line Item Layout</layout>

@@ -139,6 +139,9 @@
                         <valueListItems>
                             <value>QuoteLineItem.TotalPrice</value>
                         </valueListItems>
+                        <valueListItems>
+                            <value>QuoteLineItem.Approval__c</value>
+                        </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
                 <componentName>runtime_revenue_foundation:transactionLineTable</componentName>
@@ -489,16 +492,6 @@
                 <identifier>RecordApprovalStatus_cField</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>readonly</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.RLM_ApprovalStatus__c</fieldItem>
-                <identifier>RecordApprovalStatus_cField2</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-94dcf0c9-6dbb-42fc-a48f-4300551838b8</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -639,16 +632,6 @@
                 <identifier>RecordLastModifiedByIdField</identifier>
             </fieldInstance>
         </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.LastPricedDate</fieldItem>
-                <identifier>RecordLastPricedDateField</identifier>
-            </fieldInstance>
-        </itemInstances>
         <name>Facet-852b10dd-72a2-463a-bd87-90ceaf3fa84a</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -679,18 +662,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.RLM_SubmittedUser__c</fieldItem>
-                <identifier>RecordSubmittedUser_cField</identifier>
-            </fieldInstance>
-        </itemInstances>
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.RLM_SubmittedDate__c</fieldItem>
-                <identifier>RecordSubmittedDate_cField</identifier>
+                <fieldItem>Record.LastPricedDate</fieldItem>
+                <identifier>RecordLastPricedDateField</identifier>
             </fieldInstance>
         </itemInstances>
         <name>Facet-7a57f133-c909-4107-b11e-367d9248a0da</name>
