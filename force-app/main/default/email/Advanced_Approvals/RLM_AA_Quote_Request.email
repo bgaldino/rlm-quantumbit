@@ -93,7 +93,7 @@
         
         <p></p>
         
-        <p>Click <a href="{!relatedTo.Quote__r.BaseURL__c}/{!relatedTo.Quote__c}">here</a> to go to view the Quote.</p>
+        <p>Click <a href="{!relatedTo.Quote__r.RLM_BaseURL__c}/{!relatedTo.Quote__c}">here</a> to go to view the Quote.</p>
         
     </body>
 </html> 
