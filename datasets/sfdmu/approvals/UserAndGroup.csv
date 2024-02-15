@@ -1,10 +1,11 @@
-Id,Name
-0053y00000GEuVEAA1,Automated Process
-0053y00000GpWmFAAV,Admin User
-0053y00000GpXpLAAV,Valerie VP
-0053y00000GpXpQAAV,Don Director
-0053y00000GpXpVAAV,Martin Manager
-0053y00000GpXpaAAF,Fiona Finance
-0053y00000GpXpfAAF,Edgar Fallon
-0053y00000GEuVHAA1,Platform Integration User
-0053y00000GEuVGAA1,Chatter Expert
+Id,Name,Username
+0053y00000GEuVEAA1,Automated Process,autoproc@00d3y0000023yoeea2
+0053y00000GkOgRAAV,System,automatedcase@00d3y0000023yoeea2.ext
+0053y00000GpXpLAAV,Valerie VP,vp_approver@test.com
+0053y00000GpXpQAAV,Don Director,director_approver@test.com
+0053y00000GpXpVAAV,Martin Manager,manager_approver@test.com
+0053y00000GpXpaAAF,Fiona Finance,finance.approver@test.com
+0053y00000GpXpfAAF,Edgar Fallon,cfo.approver@test.com
+0053y00000GpWmFAAV,Admin User,bgaldino@rlm.base.test1
+0053y00000GEuVHAA1,Platform Integration User,cloud@00d3y0000023yoeea2
+0053y00000GEuVGAA1,Chatter Expert,chatty.00d3y0000023yoeea2.hot8vxitsv9k@chatter.salesforce.com

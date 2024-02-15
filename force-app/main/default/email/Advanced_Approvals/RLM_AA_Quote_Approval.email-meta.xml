@@ -10,6 +10,7 @@
         <namespace>sbaa</namespace>
     </packageVersions>
     <style>none</style>
+    <subject>Approved Quote:</subject>
     <type>visualforce</type>
     <uiType>Aloha</uiType>
 </EmailTemplate>

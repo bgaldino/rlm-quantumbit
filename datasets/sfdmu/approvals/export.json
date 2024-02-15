@@ -1,16 +1,21 @@
 {
     "objects": [
         {
-            "query": "SELECT Name,Username FROM user WHERE IsActive = 'true'",
+            "query": "SELECT Id, Name, Username FROM User",
             "operation": "Readonly",
             "externalId": "Name",
-            "excluded": true
+            "excluded": false
+        },
+        {
+            "query": "SELECT Name FROM Group where Name != ''",
+            "operation": "Readonly",
+            "externalId": "Name",
+            "excluded": false
         },
         {
             "query": "SELECT Name, sbaa__TargetObject__c FROM sbaa__ApprovalChain__c",
             "operation": "Upsert",
-            "externalId": "Name",
-            "excluded": false
+            "externalId": "Name"
         },
         {
             "query": "SELECT Name, sbaa__ApprovalRule__c, sbaa__EnableSmartApproval__c, sbaa__FilterField__c, sbaa__FilterType__c, sbaa__FilterValue__c, sbaa__FilterVariable__c, sbaa__Index__c, sbaa__Operator__c, sbaa__TestedField__c, sbaa__TestedVariable__c FROM sbaa__ApprovalCondition__c",
@@ -37,10 +42,19 @@
             "excluded": false
         },
         {
-            "query": "SELECT Name FROM EmailTemplate",
-            "operation": "Upsert",
+            "query": "SELECT Id, Name FROM EmailTemplate WHERE Name LIKE 'RLM%'",
+            "operation": "Readonly",
             "externalId": "Name",
-            "excluded": false
+            "useFieldMapping": true,
+            "fieldMapping": [
+                {
+                    "targetObject": "sbaa__EmailTemplate__c"
+                },
+                {
+                    "sourceField": "Id",
+                    "targetField": "sbaa__TemplateId__c"
+                }
+            ]
         },
         {
             "query": "SELECT Name, sbaa__TemplateId__c FROM sbaa__EmailTemplate__c",

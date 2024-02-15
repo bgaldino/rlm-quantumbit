@@ -1,19 +1,18 @@
-<messaging:emailTemplate subject="Approved Quote: {!relatedTo.Quote__r.Name}" recipientType="User" relatedToType="sbaa__Approval__c">
+<messaging:emailTemplate subject="Rejected Quote: {!relatedTo.Quote__r.Name}" recipientType="User" relatedToType="sbaa__Approval__c">
 <messaging:htmlEmailBody >
 <html>
     <body>
+        <div id="logo"><img height="50px" src="https://copa.s3.amazonaws.com/RLM_quantum_bit_logo.png" alt="Company Logo" /></div>
         
-        <div id="logo"><img height="50px" src="{!$Resource.RLM_quantum_bit_logo}" alt="Company Logo" /></div>
+        <h3 style="color:#2B72B8;">Management has REJECTED your request for Quote: {!relatedTo.Quote__r.Name}</h3>
+        <h4 style="color:#2B72B8;">Rejection Notes: {!relatedTo.sbaa__CommentsLong__c}</h4>
 
-        <h3 style="color:#019002;">Management has approved your approval request for Quote: {!relatedTo.Quote__r.Name}</h3>
-        <h4>Approval Notes: {!relatedTo.sbaa__CommentsLong__c}</h4>
        <table style="border-collapse:collapse; width:100%;">
             <thead>
                 <tr style="width:100%;">
-                  <th colspan="5" style="width:5%; background-color:#00FF00; color:#000000; padding:5px; border:solid 1pt #000000;">
-                        Approval Information
+                    <th colspan="5" style="width:5%; background-color:#2B72B8; color:#fff; padding:5px; border:solid 1pt #2B72B8;">
+                        Quote Details
                     </th>
-
                 </tr>
             </thead>
             <tbody>
@@ -91,7 +90,7 @@
         
         <p></p>
         
-        <p>Click <a href="https://na35.salesforce.com/{!relatedTo.Quote__c}">here</a> to go to view the Quote.</p>
+        <p>Click <a href="{!relatedTo.Quote__r.BaseURL__c}/{!relatedTo.Quote__c}">here</a> to go to view the Quote.</p>
         
     </body>
 </html> 

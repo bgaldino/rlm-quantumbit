@@ -1,6 +1,0 @@
-Id,Name,sbaa__DelegatedApprover__c,sbaa__DelegatedApprover__r.Name,sbaa__DelegatedUserId__c,sbaa__DelegationEnd__c,sbaa__DelegationStart__c,sbaa__GroupId__c,sbaa__NextApprover__c,sbaa__NextApprover__r.Name,sbaa__Unanimous__c,sbaa__User__c,sbaa__User__r.Name
-a0M3y00000EOzP5EAL,CFO,,,,,,,,,false,0053y00000GpXpfAAF,Edgar Fallon
-a0M3y00000EOz2REAT,Controller,,,,,,,,,false,0053y00000GpXpaAAF,Fiona Finance
-a0M3y00000EOzP0EAL,Sales Manager,,,,,,,,,false,0053y00000GpXpVAAV,Martin Manager
-a0M3y00000EOzPFEA1,VP,,,,,,,,,false,0053y00000GpXpLAAV,Valerie VP
-a0M3y00000EOzPAEA1,Director,,,,,,,,,false,0053y00000GpXpQAAV,Don Director

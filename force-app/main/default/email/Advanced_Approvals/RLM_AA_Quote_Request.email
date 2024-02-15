@@ -2,7 +2,7 @@
 <messaging:htmlEmailBody >
 <html>
     <body>
-        <div id="logo"><img height="50px" src="{!$Resource.RLM_quantum_bit_logo}" alt="Company Logo" /></div>
+        <div id="logo"><img height="50px" src="https://copa.s3.amazonaws.com/RLM_quantum_bit_logo.png" alt="Company Logo" /></div>
 
         <p style="color:white"><apex:outputText value="{!relatedTo.Quote__r.Id}"/></p>
         <p style="color:white"><apex:outputText value="{!relatedTo.ID}"/></p>
@@ -14,7 +14,7 @@
             <thead>
                 <tr style="width:100%;">
                     <th colspan="5" style="width:5%; background-color:#2B72B8; color:#fff; padding:5px; border:solid 1pt #2B72B8;">
-                        Deal Information
+                        Quote Details
                     </th>
                 </tr>
             </thead>
@@ -93,7 +93,7 @@
         
         <p></p>
         
-        <p>Click <a href="https://smartbytes.my.salesforce.com/{!relatedTo.Quote__c}">here</a> to go to view the Quote.</p>
+        <p>Click <a href="{!relatedTo.Quote__r.BaseURL__c}/{!relatedTo.Quote__c}">here</a> to go to view the Quote.</p>
         
     </body>
 </html> 

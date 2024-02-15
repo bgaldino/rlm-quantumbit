@@ -1,0 +1,6 @@
+Errors,Id,sbaa__ApprovalRule__c,sbaa__EnableSmartApproval__c,sbaa__FilterField__c,sbaa__FilterType__c,sbaa__FilterValue__c,sbaa__FilterVariable__c,sbaa__Index__c,sbaa__Operator__c,sbaa__TestedField__c,sbaa__TestedVariable__c
+,a0Gal000000QHLNEA4,a0Hal0000004tcDEAQ,false,,Value,15,,,greater than,,a0Kal000000U6O9EAK
+,a0Gal000000QHLOEA4,a0Hal0000004tcEEAQ,false,,Value,1000000,,,greater or equals,TotalPrice,
+,a0Gal000000QHLPEA4,a0Hal0000004tcFEAQ,false,,Value,25,,,greater than,,a0Kal000000U6O9EAK
+,a0Gal000000QHLQEA4,a0Hal0000004tcGEAQ,false,,Value,35,,,greater than,,a0Kal000000U6O9EAK
+,a0Gal000000QHLREA4,a0Hal0000004tcHEAQ,false,,Value,Net 30,,,not equals,RLM_Payment_Terms__c,
