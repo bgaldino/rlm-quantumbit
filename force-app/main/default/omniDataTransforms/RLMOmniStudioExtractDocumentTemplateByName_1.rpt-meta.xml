@@ -25,6 +25,34 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
+        <globalKey>RLMOmniStudioExtractDocumentTemplateByName8073668219430536</globalKey>
+        <inputFieldName>DocumentTemplate:Type</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RLMOmniStudioExtractDocumentTemplateByName</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>TemplateType</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>RLMOmniStudioExtractDocumentTemplateByName1914261311304839</globalKey>
+        <inputFieldName>DocumentTemplate:VersionNumber</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RLMOmniStudioExtractDocumentTemplateByName</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>VersionNumber</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
         <filterOperator>=</filterOperator>
         <filterValue>&apos;true&apos;</filterValue>
         <globalKey>RLMOmniStudioExtractDocumentTemplateByName8188257225945756</globalKey>
@@ -42,10 +70,24 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
+        <globalKey>RLMOmniStudioExtractDocumentTemplateByName21731006789474638</globalKey>
+        <inputFieldName>DocumentTemplate:Id</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>RLMOmniStudioExtractDocumentTemplateByName</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Id</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
         <filterOperator>=</filterOperator>
-        <filterValue>&apos;JSON&apos;</filterValue>
-        <globalKey>RLMOmniStudioExtractDocumentTemplateByName05566078037087685</globalKey>
-        <inputFieldName>TokenMappingType</inputFieldName>
+        <filterValue>templateName</filterValue>
+        <globalKey>RLMOmniStudioExtractDocumentTemplateByName7530445006681319</globalKey>
+        <inputFieldName>Name</inputFieldName>
         <inputObjectName>DocumentTemplate</inputObjectName>
         <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
@@ -74,57 +116,15 @@
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
         <filterOperator>=</filterOperator>
-        <filterValue>templateName</filterValue>
-        <globalKey>RLMOmniStudioExtractDocumentTemplateByName7530445006681319</globalKey>
-        <inputFieldName>Name</inputFieldName>
+        <filterValue>&apos;JSON&apos;</filterValue>
+        <globalKey>RLMOmniStudioExtractDocumentTemplateByName05566078037087685</globalKey>
+        <inputFieldName>TokenMappingType</inputFieldName>
         <inputObjectName>DocumentTemplate</inputObjectName>
         <inputObjectQuerySequence>1.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
         <name>RLMOmniStudioExtractDocumentTemplateByName</name>
         <outputCreationSequence>0.0</outputCreationSequence>
         <outputFieldName>DocumentTemplate</outputFieldName>
-        <outputObjectName>json</outputObjectName>
-        <requiredForUpsert>false</requiredForUpsert>
-        <upsertKey>false</upsertKey>
-    </omniDataTransformItem>
-    <omniDataTransformItem>
-        <disabled>false</disabled>
-        <filterGroup>0.0</filterGroup>
-        <globalKey>RLMOmniStudioExtractDocumentTemplateByName21731006789474638</globalKey>
-        <inputFieldName>DocumentTemplate:Id</inputFieldName>
-        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
-        <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>RLMOmniStudioExtractDocumentTemplateByName</name>
-        <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>Id</outputFieldName>
-        <outputObjectName>json</outputObjectName>
-        <requiredForUpsert>false</requiredForUpsert>
-        <upsertKey>false</upsertKey>
-    </omniDataTransformItem>
-    <omniDataTransformItem>
-        <disabled>false</disabled>
-        <filterGroup>0.0</filterGroup>
-        <globalKey>RLMOmniStudioExtractDocumentTemplateByName1914261311304839</globalKey>
-        <inputFieldName>DocumentTemplate:VersionNumber</inputFieldName>
-        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
-        <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>RLMOmniStudioExtractDocumentTemplateByName</name>
-        <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>VersionNumber</outputFieldName>
-        <outputObjectName>json</outputObjectName>
-        <requiredForUpsert>false</requiredForUpsert>
-        <upsertKey>false</upsertKey>
-    </omniDataTransformItem>
-    <omniDataTransformItem>
-        <disabled>false</disabled>
-        <filterGroup>0.0</filterGroup>
-        <globalKey>RLMOmniStudioExtractDocumentTemplateByName8073668219430536</globalKey>
-        <inputFieldName>DocumentTemplate:Type</inputFieldName>
-        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
-        <linkedObjectSequence>0.0</linkedObjectSequence>
-        <name>RLMOmniStudioExtractDocumentTemplateByName</name>
-        <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>TemplateType</outputFieldName>
         <outputObjectName>json</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <upsertKey>false</upsertKey>
