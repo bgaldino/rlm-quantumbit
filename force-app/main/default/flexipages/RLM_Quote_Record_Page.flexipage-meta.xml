@@ -101,6 +101,12 @@
                             <value>QuoteLineItem.Quantity</value>
                         </valueListItems>
                         <valueListItems>
+                            <value>QuoteLineItem.StartDate</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>QuoteLineItem.EndDate</value>
+                        </valueListItems>
+                        <valueListItems>
                             <value>QuoteLineItem.Subtotal</value>
                         </valueListItems>
                         <valueListItems>
@@ -128,6 +134,12 @@
                             <value>QuoteLineItem.BillingFrequency</value>
                         </valueListItems>
                         <valueListItems>
+                            <value>QuoteLineItem.StartDate</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>QuoteLineItem.EndDate</value>
+                        </valueListItems>
+                        <valueListItems>
                             <value>QuoteLineItem.ListPrice</value>
                         </valueListItems>
                         <valueListItems>
@@ -141,6 +153,15 @@
                         </valueListItems>
                         <valueListItems>
                             <value>QuoteLineItem.Approval__c</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>QuoteLineItem.Discount</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>QuoteLineItem.Quantity</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>Quote.QuoteAccount.Name[Account]</value>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
@@ -810,7 +831,7 @@
             <componentInstance>
                 <componentInstanceProperties>
                     <name>relatedListComponentOverride</name>
-                    <value>NONE</value>
+                    <value>ADVGRID</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
                     <name>rowsToDisplay</name>
