@@ -133,6 +133,12 @@
                             <value>QuoteLineItem.EndDate</value>
                         </valueListItems>
                         <valueListItems>
+                            <value>QuoteLineItem.SubscriptionTerm</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>QuoteLineItem.SubscriptionTermUnit</value>
+                        </valueListItems>
+                        <valueListItems>
                             <value>QuoteLineItem.Subtotal</value>
                         </valueListItems>
                         <valueListItems>
@@ -187,7 +193,19 @@
                             <value>QuoteLineItem.Quantity</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>Quote.QuoteAccount.Name[Account]</value>
+                            <value>QuoteLineItem.SubscriptionTerm</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>QuoteLineItem.SubscriptionTermUnit</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>QuoteLineItem.PricingTerm</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>QuoteLineItem.PricingTermCount</value>
+                        </valueListItems>
+                        <valueListItems>
+                            <value>QuoteLineItem.PricingTermUnit</value>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
