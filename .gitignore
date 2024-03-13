@@ -60,3 +60,5 @@ temp_folder
 **/.eslintrc.json
 sfdmu/logs
 package-lock.json
+datasets/sfdmu/approvals/source
+datasets/sfdmu/approvals/target
