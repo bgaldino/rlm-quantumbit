@@ -139,16 +139,13 @@
                             <value>QuoteLineItem.SubscriptionTermUnit</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>QuoteLineItem.Subtotal</value>
-                        </valueListItems>
-                        <valueListItems>
                             <value>QuoteLineItem.Discount</value>
                         </valueListItems>
                         <valueListItems>
                             <value>QuoteLineItem.Approval__c</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>QuoteLineItem.NetTotalPrice</value>
+                            <value>QuoteLineItem.NetUnitPrice</value>
                         </valueListItems>
                         <valueListItems>
                             <value>QuoteLineItem.TotalPrice</value>
