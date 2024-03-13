@@ -1,6 +1,6 @@
-Id,Name,sbaa__ApprovalRule__c,sbaa__ApprovalRule__r.Name,sbaa__EnableSmartApproval__c,sbaa__FilterField__c,sbaa__FilterType__c,sbaa__FilterValue__c,sbaa__FilterVariable__c,sbaa__FilterVariable__r.Name,sbaa__Index__c,sbaa__Operator__c,sbaa__TestedField__c,sbaa__TestedVariable__c,sbaa__TestedVariable__r.Name
-a0G3y00000SUKU6EAP,AC-000001,a0H3y00000bDMw9EAG,Discounting Approval > 15%,false,,Value,15,,,,greater than,,a0K3y00000BE0ATEA1,Max Discount
-a0G3y00000SUKUBEA5,AC-000002,a0H3y00000bDMwEEAW,Deal is Greater Than $1 Million,false,,Value,1000000,,,,greater or equals,TotalPrice,,
-a0G3y00000SUKUGEA5,AC-000003,a0H3y00000bDMwJEAW,Discounting Approval > 25%,false,,Value,25,,,,greater than,,a0K3y00000BE0ATEA1,Max Discount
-a0G3y00000SUKULEA5,AC-000004,a0H3y00000bDMwOEAW,Discounting Approval > 35%,false,,Value,35,,,,greater than,,a0K3y00000BE0ATEA1,Max Discount
-a0G3y00000SUKTwEAP,AC-000000,a0H3y00000bDMw4EAG,Non Standard Payment Terms,false,,Value,Net 30,,,,not equals,RLM_Payment_Terms__c,,
+Name,sbaa__ApprovalRule__r.Name,sbaa__EnableSmartApproval__c,sbaa__FilterField__c,sbaa__FilterType__c,sbaa__FilterValue__c,sbaa__FilterVariable__r.Name,sbaa__Index__c,sbaa__Operator__c,sbaa__TestedField__c,sbaa__TestedVariable__r.Name
+AC-000000,Discounting Approval > 15%,false,,Value,15,,,greater than,,Max Discount
+AC-000001,Deal is Greater Than $1 Million,false,,Value,1000000,,,greater or equals,TotalPrice,
+AC-000002,Discounting Approval > 25%,false,,Value,25,,,greater than,,Max Discount
+AC-000003,Discounting Approval > 35%,false,,Value,35,,,greater than,,Max Discount
+AC-000004,Non Standard Payment Terms,false,,Value,Net 30,,,not equals,RLM_Payment_Terms__c,

@@ -1,6 +1,0 @@
-Id,Name,sbaa__DelegatedApprover__c,sbaa__DelegatedApprover__r.Name,sbaa__DelegatedUserId__c,sbaa__DelegationEnd__c,sbaa__DelegationStart__c,sbaa__GroupId__c,sbaa__NextApprover__c,sbaa__NextApprover__r.Name,sbaa__Unanimous__c,sbaa__User__c,sbaa__User__r.Name
-a0M3y00000EOzP5EAL,CFO,,,,,,00G3y000004HghgEAC,,,false,,
-a0M3y00000EOz2REAT,Controller,,,,,,00G3y000004HgiUEAS,,,false,,
-a0M3y00000EOzP0EAL,Sales Manager,,,,,,00G3y000004HgijEAC,,,false,,
-a0M3y00000EOzPFEA1,VP,,,,,,00G3y000004HgieEAC,,,false,,
-a0M3y00000EOzPAEA1,Director,,,,,,00G3y000004HgiZEAS,,,false,,
