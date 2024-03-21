@@ -37,16 +37,13 @@
                     "query": "SELECT Id, Name FROM EmailTemplate WHERE Name LIKE 'RLM%'",
                     "operation": "Readonly",
                     "externalId": "Name",
-                    "useFieldMapping": true,
-                    "fieldMapping": [
-                        {
-                            "targetObject": "sbaa__EmailTemplate__c"
-                        },
-                        {
-                            "sourceField": "Id",
-                            "targetField": "sbaa__TemplateId__c"
-                        }
-                    ]
+                    "excluded": false
+                },
+                {
+                    "query": "SELECT Id, Name FROM Group WHERE Type = 'Queue'",
+                    "operation": "Readonly",
+                    "externalId": "Name",
+                    "excluded": false
                 },
                 {
                     "query": "SELECT Name, sbaa__TemplateId__c FROM sbaa__EmailTemplate__c",
