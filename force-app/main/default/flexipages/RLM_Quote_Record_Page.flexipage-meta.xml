@@ -13,7 +13,7 @@
                             <value>headlessPricingAction</value>
                         </valueListItems>
                         <valueListItems>
-                            <value>CustomButton.Quote.RLM_Preview_Approval</value>
+                            <value>SyncQuote</value>
                         </valueListItems>
                         <valueListItems>
                             <value>CreateOrder</value>
@@ -51,6 +51,9 @@
                             </visibilityRule>
                         </valueListItems>
                         <valueListItems>
+                            <value>CustomButton.Quote.RLM_Preview_Approval</value>
+                        </valueListItems>
+                        <valueListItems>
                             <value>CreatePdf</value>
                         </valueListItems>
                         <valueListItems>
@@ -64,9 +67,6 @@
                         </valueListItems>
                         <valueListItems>
                             <value>PrintableView</value>
-                        </valueListItems>
-                        <valueListItems>
-                            <value>SyncQuote</value>
                         </valueListItems>
                     </valueList>
                 </componentInstanceProperties>
